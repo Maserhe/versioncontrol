@@ -1,6 +1,6 @@
-package com.xencio.service;
+package com.xencio.versionrecord.service;
 
-import com.xencio.entity.Tenant;
+import com.xencio.versionrecord.entity.Tenant;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,4 +1,4 @@
-package com.xencio.entity;
+package com.xencio.versionrecord.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

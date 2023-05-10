@@ -1,8 +1,8 @@
-package com.xencio.service.impl;
+package com.xencio.versionrecord.service.impl;
 
-import com.xencio.entity.Tenant;
-import com.xencio.mapper.TenantMapper;
-import com.xencio.service.TenantService;
+import com.xencio.versionrecord.entity.Tenant;
+import com.xencio.versionrecord.mapper.TenantMapper;
+import com.xencio.versionrecord.service.TenantService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

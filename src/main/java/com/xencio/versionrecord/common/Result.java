@@ -1,4 +1,4 @@
-package com.xencio.common;
+package com.xencio.versionrecord.common;
 
 import lombok.Data;
 import java.io.Serializable;

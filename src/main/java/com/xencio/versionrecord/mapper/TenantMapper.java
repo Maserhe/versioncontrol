@@ -1,6 +1,6 @@
-package com.xencio.mapper;
+package com.xencio.versionrecord.mapper;
 
-import com.xencio.entity.Tenant;
+import com.xencio.versionrecord.entity.Tenant;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

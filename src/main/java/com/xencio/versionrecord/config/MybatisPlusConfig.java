@@ -1,4 +1,4 @@
-package com.xencio.config;
+package com.xencio.versionrecord.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  **/
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.xencio.mapper")
+@MapperScan("com.xencio.versionrecord.mapper")
 public class MybatisPlusConfig {
 
     @Bean

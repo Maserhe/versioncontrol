@@ -1,4 +1,4 @@
-package com.xencio.entity;
+package com.xencio.versionrecord.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;

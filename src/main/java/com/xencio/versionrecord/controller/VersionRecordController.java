@@ -1,9 +1,8 @@
-package com.xencio.controller;
+package com.xencio.versionrecord.controller;
 
 
-import com.xencio.entity.Tenant;
-import com.xencio.service.TenantService;
-import com.xencio.service.impl.TenantServiceImpl;
+import com.xencio.versionrecord.entity.Tenant;
+import com.xencio.versionrecord.service.TenantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

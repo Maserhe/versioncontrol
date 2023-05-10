@@ -1,4 +1,4 @@
-package com.xencio.controller;
+package com.xencio.versionrecord.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
