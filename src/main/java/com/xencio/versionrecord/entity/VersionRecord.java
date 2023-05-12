@@ -88,7 +88,7 @@ public class VersionRecord implements Serializable {
     /**
      * 0 没有删除, 1, 删除
      */
-    private Integer isDelete;
+    private Integer isDelete = 0;
 
 
 }

@@ -75,11 +75,12 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         // 但是这里创建的token只是单纯的token
         // 按照jwt的规定，最后请求的时候应该是 `Bearer token`
         response.setHeader("token", JwtTokenUtils.TOKEN_PREFIX + token);
+        response.getWriter().write(JSONUtil.toJsonStr(CommonResult.success(jwtUser.getUsername(), "login success!")));
     }
 
     @Override
     protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response, AuthenticationException failed) throws IOException, ServletException {
         // response.getWriter().write("authentication failed, reason: " + failed.getMessage());
-        response.getWriter().write(JSONUtil.toJsonStr(CommonResult.validateFailed(failed.getMessage())));
+        response.getWriter().write(JSONUtil.toJsonStr(CommonResult.unauthorized(null, failed.getMessage())));
     }
 }
