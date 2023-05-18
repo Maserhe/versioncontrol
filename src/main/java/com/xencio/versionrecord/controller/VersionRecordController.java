@@ -2,8 +2,8 @@ package com.xencio.versionrecord.controller;
 
 
 import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.util.ObjectUtil;
 import com.xencio.versionrecord.common.model.AddVersionRecordVo;
+import com.xencio.versionrecord.common.model.SelectPageVo;
 import com.xencio.versionrecord.common.response.CommonResult;
 import com.xencio.versionrecord.entity.VersionRecord;
 import com.xencio.versionrecord.service.VersionRecordService;
@@ -43,8 +43,6 @@ public class VersionRecordController {
 
     @PostMapping("/change")
     public CommonResult changeVersionRecord() {
-
-
         return CommonResult.success("");
     }
 
@@ -60,6 +58,15 @@ public class VersionRecordController {
     }
 
 
+    /**
+     *  分页查询接口
+     * @param spv
+     * @return
+     */
+    @PostMapping("/query")
+    public CommonResult selectPage(@RequestBody SelectPageVo spv) {
 
+        return vrService.selectPage(spv);
+    }
 
 }
